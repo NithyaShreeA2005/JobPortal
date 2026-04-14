@@ -1,3 +1,8 @@
+Here is your **final README.md** — clean, professional, and fully copyable. No extra formatting, no issues. Just copy-paste into your `README.md`.
+
+---
+
+````md
 # 📱 JobPortal — React Native (Expo) App
 
 A modern, clean, and scalable **job portal mobile application** built using **React Native (Expo)**, **Firebase Authentication**, and **Firestore**.
@@ -55,8 +60,11 @@ This app demonstrates real-world concepts like authentication, state management,
 ```bash
 npx create-expo-app JobPortal --template blank
 cd JobPortal
+````
 
-2. Install Dependencies
+### 2. Install Dependencies
+
+```bash
 npx expo install \
   @react-native-async-storage/async-storage \
   @react-navigation/native \
@@ -66,31 +74,69 @@ npx expo install \
   react-native-safe-area-context \
   react-native-gesture-handler \
   firebase
-3. Project Setup
-Replace default App.js
-Copy the src/ folder into your project
-4. Firebase Configuration
-Go to Firebase Console
-Create a new project
-Add a Web App
-Copy the config object
-5. Enable Services
+```
 
-Inside Firebase:
+### 3. Project Setup
 
-Enable Authentication → Email/Password
-Create Firestore Database (Test Mode)
-6. Add Config
+* Replace default `App.js`
+* Copy the `src/` folder into your project
 
-Paste your config into:
+---
 
+## 🔥 Firebase Setup
+
+1. Go to Firebase Console
+2. Create a new project
+3. Add a Web App
+4. Copy the config
+
+### Enable Services:
+
+* Authentication → Email/Password
+* Firestore Database → Test Mode
+
+---
+
+## ⚙️ Add Firebase Config
+
+Create file:
+
+```
 src/config/firebase.js
-7. Run the App
+```
+
+Paste:
+
+```js
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "YOUR_KEY",
+  authDomain: "YOUR_DOMAIN",
+  projectId: "YOUR_ID",
+  storageBucket: "YOUR_BUCKET",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID",
+};
+
+export const app = initializeApp(firebaseConfig);
+```
+
+---
+
+## ▶️ Run App
+
+```bash
 npx expo start
+```
 
 Scan QR using Expo Go.
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+
+```
 App.js
 src/
   config/
@@ -112,44 +158,67 @@ src/
     jobService.js
   utils/
     helpers.js
-🌐 API & Data
-Job data is handled via a mock service layer (jobService.js)
-Easily replaceable with real APIs
-🖼️ Assets & Images
-Images sourced from Unsplash
-Replaceable via Cloudinary or any CDN
-🎨 Design System
-Token	Value
-Primary	#4F46E5
-Background	#F1F5F9
-Card	#FFFFFF
-Text Primary	#1E293B
-Text Muted	#64748B
-Error	#EF4444
-Success	#10B981
-⚠️ Notes
-Firestore is in test mode (not secure for production)
-Replace mock API with real backend for production use
-Use environment variables for Firebase config in real apps
-🚀 Future Improvements
-🔎 Advanced filtering (location, salary)
-❤️ Save/bookmark jobs
-🔔 Push notifications
-🌍 Real job API integration
-🌙 Dark mode
-📌 What This Project Demonstrates
-React Native architecture
-API integration & async handling
-Firebase authentication flow
-Navigation patterns (Stack + Tabs)
-UI component reusability
-👩‍💻 Author
+```
 
-Nithya Shree A
+---
+
+## 🌐 API & Data
+
+* Job data handled via `jobService.js`
+* Replace with real APIs if needed
+
+---
+
+## 🎨 Design System
+
+| Token        | Value   |
+| ------------ | ------- |
+| Primary      | #4F46E5 |
+| Background   | #F1F5F9 |
+| Card         | #FFFFFF |
+| Text Primary | #1E293B |
+| Text Muted   | #64748B |
+| Error        | #EF4444 |
+| Success      | #10B981 |
+
+---
+
+## ⚠️ Notes
+
+* Firestore in test mode (not production-safe)
+* Replace mock data with real API for production
+* Use env variables for Firebase in real apps
+
+---
+
+## 🚀 Future Improvements
+
+* Advanced filters (location, salary)
+* Save jobs feature
+* Push notifications
+* Real job APIs integration
+* Dark mode
+
+---
+
+## 📌 Learning Outcomes
+
+* React Native architecture
+* Navigation (Stack + Tabs)
+* Firebase authentication
+* API integration
+* Component-based UI design
+
+---
+
+## 👩‍💻 Author
+
+**Nithya Shree A**
 ECE Undergraduate | UI/UX Enthusiast | React Native Developer
 
-![WhatsApp Image 2026-04-14 at 9 52 55 AM](https://github.com/user-attachments/assets/c36ab252-e377-47f5-98eb-eacb94d81379)
-![WhatsApp Image 2026-04-14 at 9 52 55 AM (2)](https://github.com/user-attachments/assets/a2eff6d4-f128-438a-bcd7-61181f481d0d)
-![WhatsApp Image 2026-04-14 at 9 52 55 AM (1)](https://github.com/user-attachments/assets/fe27056e-847c-4fe6-8b50-0acfcbc98760)
-![WhatsApp Image 2026-04-14 at 9 52 56 AM](https://github.com/user-attachments/assets/246a4e18-df21-45dc-887e-9ca7ae2300bb)
+```
 
+---
+
+
+```
