@@ -1,8 +1,4 @@
-Here is your **final README.md** — clean, professional, and fully copyable. No extra formatting, no issues. Just copy-paste into your `README.md`.
 
----
-
-````md
 # 📱 JobPortal — React Native (Expo) App
 
 A modern, clean, and scalable **job portal mobile application** built using **React Native (Expo)**, **Firebase Authentication**, and **Firestore**.
