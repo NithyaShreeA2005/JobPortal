@@ -1,5 +1,5 @@
 
-# 📱 JobPortal — React Native (Expo) App
+#  JobPortal — React Native (Expo) App
 
 A modern, clean, and scalable **job portal mobile application** built using **React Native (Expo)**, **Firebase Authentication**, and **Firestore**.
 
@@ -7,7 +7,7 @@ This app demonstrates real-world concepts like authentication, state management,
 
 ---
 
-## 🚀 Features
+##  Features
 
 - 🔐 **Authentication**
   - Email & Password login/signup (Firebase)
